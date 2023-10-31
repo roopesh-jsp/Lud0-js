@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,100;1,200;1,300;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* board desigining */
+.board {
+  width: 600px;
+  height: 600px;
+  background-color: aquamarine;
+  margin: 40px 0 0 400px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.spwanbox {
+  height: 240px;
+  width: 240px;
+  background-color: brown;
+
+  border: 1px solid #000;
+}
+.winbox {
+  height: 120px;
+  width: 120px;
+  background-color: blue;
+  border: 1px solid #000;
+}
+.pathbox {
+  height: 240px;
+  width: 120px;
+  background-color: azure;
+}
+.pathboxx {
+  height: 120px;
+  width: 240px;
+  background-color: azure;
+}
+.innerbox {
+  width: 160px;
+  height: 160px;
+  margin: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  padding: 20px;
+}
+.circles {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.sb1 {
+  background-color: yellow;
+}
+.sb2 {
+  background-color: green;
+}
+.sb3 {
+  background-color: red;
+}
+.sb4 {
+  background-color: blue;
+}
