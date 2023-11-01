@@ -9,7 +9,7 @@
 .board {
   width: 600px;
   height: 600px;
-  background-color: aquamarine;
+
   margin: 40px 0 0 400px;
 }
 .row {
@@ -21,23 +21,34 @@
   width: 240px;
   background-color: brown;
 
-  border: 1px solid #000;
+  border: 1px solid #8d8b8b;
 }
 .winbox {
-  height: 120px;
+  /* height: 120px;
   width: 120px;
   background-color: blue;
-  border: 1px solid #000;
+  border: 1px solid #000; */
+  height: 0;
+  width: 0;
+  border-left: 60px solid yellow;
+  border-top: 60px solid green;
+  border-right: 60px solid red;
+  border-bottom: 60px solid blue;
 }
 .pathbox {
-  height: 240px;
-  width: 120px;
-  background-color: azure;
-}
-.pathboxx {
   height: 120px;
   width: 240px;
-  background-color: azure;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pathboxx {
+  height: 240px;
+  width: 120px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 .innerbox {
   width: 160px;
@@ -48,24 +59,42 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  row-gap: 40px;
+  row-gap: 20px;
   padding: 20px;
 }
 .circles {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+
   border: 1px solid #000;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
 }
 .sb1 {
   background-color: yellow;
+  color: rgb(177, 177, 2);
 }
 .sb2 {
   background-color: green;
+  color: rgb(126, 245, 126);
 }
 .sb3 {
   background-color: red;
+  color: rgb(150, 19, 19);
 }
 .sb4 {
   background-color: blue;
+  color: rgb(0, 0, 145);
+}
+
+.div {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
