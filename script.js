@@ -77,7 +77,7 @@ let gp3 = 0;
 
 let flag = 0;
 let i = 0;
-console.log(i);
+
 spin.addEventListener("click", () => {
   if (flag == 0) {
     dice = 0;
@@ -85,11 +85,11 @@ spin.addEventListener("click", () => {
     dicedisply.innerHTML = dice;
 
     flag = 1;
-    console.log(i);
+
     blue1.addEventListener("click", () => {
       if (i % 2 == 0) {
         i++;
-        console.log(i);
+
         bp1 = bp1 + dice;
         var temp = document.getElementById(bluepath[`${bp1}`]);
         temp.innerHTML = "X";
@@ -101,6 +101,7 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "bi1");
         blue1 = temp;
         flag = 0;
+        spin.classList.add("gd");
       }
     });
 
@@ -118,6 +119,7 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "bi2");
         blue2 = temp;
         flag = 0;
+        spin.classList.add("gd");
       }
     });
 
@@ -135,6 +137,7 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "bi3");
         blue3 = temp;
         flag = 0;
+        spin.classList.add("gd");
       }
     });
 
@@ -152,6 +155,7 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "bi4");
         blue4 = temp;
         flag = 0;
+        spin.classList.add("gd");
       }
     });
 
@@ -171,6 +175,8 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "gi1");
         green1 = temp;
         flag = 0;
+        spin.classList.remove("gd");
+        spin.classList.add("bd");
       }
     });
 
@@ -188,6 +194,8 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "gi2");
         green2 = temp;
         flag = 0;
+        spin.classList.remove("gd");
+        spin.classList.add("bd");
       }
     });
 
@@ -205,6 +213,8 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "gi3");
         green3 = temp;
         flag = 0;
+        spin.classList.remove("gd");
+        spin.classList.add("bd");
       }
     });
 
@@ -222,7 +232,11 @@ spin.addEventListener("click", () => {
         temp.setAttribute("id", "gi4");
         green4 = temp;
         flag = 0;
+        spin.classList.remove("gd");
+        spin.classList.add("bd");
       }
     });
   }
 });
+//comment
+// comment by roopesh
